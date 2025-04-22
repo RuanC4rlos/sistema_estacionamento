@@ -1,6 +1,7 @@
 from django.db import models
 from vehicles.models import Vehicle
 
+
 class ParkingSpot(models.Model):
     spot_number = models.CharField(
         max_length=10, 
@@ -24,6 +25,7 @@ class ParkingSpot(models.Model):
         
     def __str__(self):
         return self.spot_number
+
 
 class ParkingRecord(models.Model):
     vehicle = models.ForeignKey(

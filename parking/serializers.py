@@ -1,6 +1,6 @@
 from rest_framework import serializers
-
 from parking.models import ParkingSpot, ParkingRecord
+
 
 class ParkingSpotSerializer(serializers.ModelSerializer):
 
@@ -14,4 +14,3 @@ class ParkingRecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = ParkingRecord
         fields = '__all__'
-        
