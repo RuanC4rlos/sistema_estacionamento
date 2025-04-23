@@ -25,13 +25,14 @@ class VehicleType(models.Model):
     class Meta:
         verbose_name = "Tipo de Veículo"
         verbose_name_plural = "Tipos de Veículos"
-    
+
     def __str__(self):
         return self.name
 
+
 class Vehicle(models.Model):
     vehicle_type = models.ForeignKey(
-        VehicleType, 
+        VehicleType,
         on_delete=models.PROTECT,
         blank=True,
         null=True,
@@ -77,11 +78,10 @@ class Vehicle(models.Model):
         auto_now=True,
         verbose_name="Atualizado em",
     )
-    
-    class Meta: 
+
+    class Meta:
         verbose_name = "Veículo"
         verbose_name_plural = "Veículos"
-        
+
     def __str__(self):
         return self.license_plate
-    

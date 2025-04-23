@@ -9,5 +9,5 @@ router.register('parking/spots', ParkingSpotViewSet)
 router.register('parking/records', ParkingRecordViewSet)
 
 urlpatterns = [
-     path("", include(router.urls)),
+    path("", include(router.urls)),
 ]

@@ -7,6 +7,6 @@ from customers.filters import CustomerFilterClass
 
 class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer    
+    serializer_class = CustomerSerializer
     rql_filter_class = CustomerFilterClass
     permission_classes = [IsAdminUser, DjangoModelPermissions]

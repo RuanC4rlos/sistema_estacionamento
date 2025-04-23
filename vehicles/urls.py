@@ -9,5 +9,5 @@ router.register('vehicles/type', VehicleTypeViewSet)
 router.register('vehicles', VehicleViewSet)
 
 urlpatterns = [
-     path("", include(router.urls)),
+    path("", include(router.urls)),
 ]

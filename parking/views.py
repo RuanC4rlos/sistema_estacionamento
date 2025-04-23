@@ -18,7 +18,7 @@ class ParkingRecordViewSet(viewsets.ModelViewSet):
     serializer_class = ParkingRecordSerializer
     rql_filter_class = ParkingRecordFilterClass
     permission_classes = [DjangoModelPermissions, IsOwnerOfVehicleOrRecord]
-    
+
     def get_queryset(self):
         user = self.request.user
         if user.is_staff:

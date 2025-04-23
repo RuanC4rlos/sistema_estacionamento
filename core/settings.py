@@ -143,7 +143,7 @@ JAZZMIN_SETTINGS = {
     "site_header": "Parking Service",
     "site_brand": "Parking Service",
     "site_logo": "images/site_logo.svg",
-    "login_logo":  "images/login_logo.svg",
+    "login_logo": "images/login_logo.svg",
     "copyright": "RC Backend",
     "search_model": ["auth.User", "auth.Group"],
     "show_sidebar": True,
@@ -157,7 +157,7 @@ JAZZMIN_SETTINGS = {
         "parking.ParkingRecord": "fa-solid fa-square-parking",
         "parking.ParkingSpot": "fa-solid fa-boxes-packing",
         "vehicles.Vehicle": "fa-solid fa-car",
-        "vehicles.VehicleType": "fa-solid fa-car-side", 
+        "vehicles.VehicleType": "fa-solid fa-car-side",
     },
     "default_icon_parents": "fas fa-chevron-circle-right",
     "show_ui_builder": False,
@@ -174,5 +174,5 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Parking Service API',
     'DESCRIPTION': 'API for managing parking service',
-    'VERSION': '1.0.0', 
+    'VERSION': '1.0.0',
 }
